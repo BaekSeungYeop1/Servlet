@@ -45,16 +45,16 @@ public class RequestHeaderServlet extends HttpServlet {
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
 
-        Enumeration<String> headerNames = request.getHeaderNames();
-        while (headerNames.hasMoreElements()) {
-            String headerName = headerNames.nextElement();
-            System.out.println(headerName + ": " + request.getHeader(headerName));
- }
+//        Enumeration<String> headerNames = request.getHeaderNames();
+//        while (headerNames.hasMoreElements()) {
+//            String headerName = headerNames.nextElement();
+//            System.out.println(headerName + ": " + request.getHeader(headerName));
+// }
 
-        /*request.getHeaderNames().asIterator()
+        request.getHeaderNames().asIterator()
                 .forEachRemaining(headerName -> System.out.println(headerName + ": " + request.getHeader(headerName)));
                         System.out.println("--- Headers - end ---");
-        System.out.println();*/
+        System.out.println();
     }
 
     //Header 편리한 조회
